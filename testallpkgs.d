@@ -17,6 +17,9 @@ import std.zip;
 import std.zlib;
 import std.digest.crc;
 import std.digest.digest;
+import std.stdio;
+import core.stdc.string;
+import std.format;
 // import std.digest.hmac;
 import std.digest.md;
 import std.digest.ripemd;
@@ -25,7 +28,8 @@ import std.datetime;
 import core.time;
 import std.exception;
 import core.exception;
-import etc.c.curl;
+// XXX This relies on std.socket
+// import etc.c.curl;
 // import etc.c.odbc.sql;
 // import etc.c.odbc.sqlext;
 // import etc.c.odbc.sqltypes;
@@ -34,7 +38,6 @@ import etc.c.sqlite3;
 import etc.c.zlib;
 import std.file;
 import std.path;
-import std.stdio;
 import core.stdc.complex;
 import core.stdc.ctype;
 import core.stdc.errno;
@@ -50,7 +53,6 @@ import core.stdc.stddef;
 import core.stdc.stdint;
 import core.stdc.stdio;
 import core.stdc.stdlib;
-import core.stdc.string;
 import core.stdc.tgmath;
 import core.stdc.time;
 import core.stdc.wchar_;
@@ -74,10 +76,11 @@ import core.sync.mutex;
 import core.sync.rwmutex;
 import core.sync.semaphore;
 import core.thread; 
-import std.socket; 
+// XXX socket.d undefined reference to `in6addr_any' 
+// import std.socket; 
 // Should work but does not
 // import std.net.curl;
-import std.net.isemail; 
+// import std.net.isemail; 
 import std.uri;
 import std.uuid; 
 import std.bigint;
@@ -102,7 +105,6 @@ import std.array;
 import std.algorithm;
 import std.uni;
 import std.utf;
-import std.format;
 import std.path; 
 import std.regex; 
 import std.ascii;
@@ -115,7 +117,8 @@ import std.bitmanip;
 import std.variant; 
 import core.bitop;
 import core.simd;
-
+/*
+*/
 static if (!is(typeof(writeln)))
     alias writefln writeln;
 
