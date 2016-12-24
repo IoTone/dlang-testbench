@@ -1,0 +1,8 @@
+{
+	"name": "dlang-testbench",
+	"description": "A minimal D lang testbench to validate new toolchains and verify some basic benchmarks.",
+	"copyright": "Copyright © 2016, IoTone, Inc.",
+	"authors": ["dkords"],
+	"dependencies": {
+	}
+}
